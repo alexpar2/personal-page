@@ -2,30 +2,20 @@ import React from 'react';
 //import 'bootstrap/dist/css/bootstrap.min.css';
 import { Container, Row, Col, Card, Image, Accordion } from 'react-bootstrap';
 
-const fotoUrl = process.env.PUBLIC_URL + '/image.png';
+const fotoUrl = process.env.PUBLIC_URL + '/yo.jpg';
 
 function App() {
   return (
     <Container className="my-5">
-      <Row className="justify-content-center text-center">
-        {/* Foto de perfil */}
-          <Image 
-            src={fotoUrl} 
-            alt="Mi foto" 
-            roundedCircle 
-            fluid 
-            style={{ width: '150px', height: '150px', objectFit: 'cover' }} 
-            className="mb-4 shadow"
-          />
-          
+      <Row className="justify-content-center text-center">      
           {/* Nombre */}
           <h1 className="mb-3">Alejandro Pérez Argüello</h1>
-          
+          <h2 className="mb-3 text-secondary">Computer Engineer</h2>
           {/* Descripción */}
           <Card className="mb-4 shadow-sm">
             <Card.Body>
               <Card.Text className="lead">
-                Hello! I'm Alex, a Computer Engineering grad and flexible developer from Spain. Feel free to browse my github to see my projects from university!
+                Hello! I'm Alex, a Computer Engineering graduate and flexible developer from Spain. This is my personal webpage where I showcase myself as a professional. Feel free to browse my github to see my projects!
               </Card.Text>
             </Card.Body>
           </Card>
@@ -43,29 +33,29 @@ function App() {
           </div>
 
           <h2 className="mb-4">Main Skills</h2>
-          <Card className="mb-4 shadow-sm">
+          <Card className="mb-4 shadow-sm bg-dark text-white">
             <Card.Body>
               <Card.Title><h3>Full stack developer</h3></Card.Title>
               <Card.Text>
                 Worked in several web applications at personal, academic and professional level using several frameworks, including:
-                <ul className="list-unstyled text-dark">
-                  <li>Full-stack development for <a href="https://www.linkedin.com/company/constella/posts/?feedView=all">Constella Intelligence</a> using frameworks such as Vue and Apache Airflow. 6 month internship experience.</li> 
-                  <li>Several web applications with layered architecture using the HTML CSS JS PHP SQL stack.</li>
-                  <li>Final Grade project: Development of a web application for online data analysis using Python (FastAPI), JavaScript (React) and MongoDB</li>
+                <ul className="list-unstyled">
+                  <li>- Full-stack development for <a className="text-warning" href="https://www.linkedin.com/company/constella/posts/?feedView=all">Constella Intelligence</a> (a cybersecurity firm that manages the biggest data lake of compromised assets in the world) using frameworks such as Vue and Apache Airflow.</li>
+                  <li>- Several web applications with layered architecture using the HTML CSS JS PHP SQL stack. See this web's source code on my <a className='text-warning' href="https://github.com/alexpar2/personal-page">GitHub</a>.</li>
+                  <li>- Final Grade project: Development of a web application for online data analysis using Python (FastAPI), JavaScript (React) and MongoDB.</li>
                 </ul>
               </Card.Text>
               </Card.Body>
             </Card>
 
-          <Card className="mb-4 shadow-sm">
+          <Card className="mb-4 shadow-sm text-black">
             <Card.Body>
               <Card.Title><h3>AI and algorithms</h3></Card.Title>
               <Card.Text>
-                Worked on various projects involving AI and algorithms, including:
-                <ul className="list-unstyled text-dark">
-                  <li>Development of several algorithms (pathfinding on a tiled game, minmax for connect4) for my AI class.</li>
-                  <li>Training of a fake news detector using sklearn and nltk for my final grade project.</li>
-                  <li>Interested in prompt engineering (used LLMs for parts of my final grade project).</li>
+                <p className='text-black'>Worked on various projects involving AI and algorithms, including:</p>
+                <ul className="list-unstyled text-black">
+                  <li>- Development of several algorithms (pathfinding on a tiled game, minmax for connect4) for my Artificial Intelligence class.</li>
+                  <li>- Training of a fake news detector using sklearn and nltk for my final grade project.</li>
+                  <li>- Interested in prompt engineering (used LLMs for parts of my final grade project).</li>
                 </ul>
               </Card.Text>
             </Card.Body>
@@ -73,18 +63,19 @@ function App() {
 
         </Col>
         <Col md={4} className="text-center">
+          <h2 className="mb-4">My tech stack</h2>
             {/* Skills */}
                
             <Accordion defaultActiveKey="0" className="mb-4 shadow-sm text-start">
             <Accordion.Item eventKey="0">
-              <Accordion.Header>Technologies I've worked with</Accordion.Header>
+              <Accordion.Header><p className='text-black'>Technologies i've worked with</p></Accordion.Header>
               <Accordion.Body>
                 <Accordion flush>
                   <Accordion.Item eventKey="0">
-                    <Accordion.Header>Programming Languages</Accordion.Header>
+                    <Accordion.Header><p className='text-black'>Programming Languages</p></Accordion.Header>
                     <Accordion.Body>
                       <ul className="list-unstyled text-dark text-bold">
-                        <li>Bash</li>
+                        <li>Bash scripts</li>
                         <li>C</li>
                         <li>C++</li>
                         <li>Python</li>
@@ -99,7 +90,7 @@ function App() {
                   </Accordion.Item>
                   
                   <Accordion.Item eventKey="1">
-                    <Accordion.Header>Databases</Accordion.Header>
+                    <Accordion.Header><p className='text-black'>Databases</p></Accordion.Header>
                     <Accordion.Body>
                       <ul className="list-unstyled text-dark">
                         <li>SQL</li>
@@ -110,7 +101,7 @@ function App() {
                   </Accordion.Item>
                   
                   <Accordion.Item eventKey="2">
-                    <Accordion.Header>Frameworks & Libraries</Accordion.Header>
+                    <Accordion.Header><p className='text-black'>Frameworks & Libraries</p></Accordion.Header>
                     <Accordion.Body>
                       <ul className="list-unstyled text-dark">
                         <li>React</li>
@@ -127,7 +118,7 @@ function App() {
                   </Accordion.Item>
                   
                   <Accordion.Item eventKey="3">
-                    <Accordion.Header>Others</Accordion.Header>
+                    <Accordion.Header><p className='text-black'>Others</p></Accordion.Header>
                     <Accordion.Body>
                       <ul className="list-unstyled text-dark">
                         <li>Git & GitHub</li>
@@ -141,8 +132,8 @@ function App() {
               </Accordion.Body>
             </Accordion.Item>
           </Accordion>
-
-           <Card className="mb-4 shadow-sm">
+          <h2 className="mb-4">Contact me!</h2>
+           <Card className="mb-4 shadow-sm bg-dark text-white">
             <Card.Body className="text-center">
                 <Card.Title className="mb-4">Links of interest</Card.Title>
                 <div className="d-grid gap-2">
@@ -150,7 +141,7 @@ function App() {
                     href="https://github.com/alexpar2/" 
                     target="_blank" 
                     rel="noopener noreferrer"
-                    className="btn btn-outline-dark"
+                    className="btn btn-outline-light"
                 >
                     <i className="bi bi-github me-2"></i> GitHub
                 </a>
@@ -158,7 +149,7 @@ function App() {
                     href="https://www.linkedin.com/in/alejandro-perez-arguello-1a614b9b/" 
                     target="_blank" 
                     rel="noopener noreferrer"
-                    className="btn btn-outline-primary"
+                    className="btn btn-outline-light"
                 >
                     <i className="bi bi-linkedin me-2"></i> LinkedIn
                 </a>
@@ -166,7 +157,7 @@ function App() {
                     href={`${process.env.PUBLIC_URL}/documents/Alejandro_Perez.pdf`}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="btn btn-outline-primary"
+                    className="btn btn-outline-warning"
                 >
                     <i className="bi bi-file-earmark-pdf me-2"></i> View CV
                 </a>
