@@ -20,20 +20,9 @@ function App() {
             </Card.Body>
           </Card>
         <Col md={8} className="text-center">
-        <h2 className="mb-4">Final Grade Project Showcase</h2>
-        <p> Coming soon!</p>
-
-          {/* Video */}
-          <div className="ratio ratio-16x9 mb-5 shadow">
-            <iframe 
-              src="https://www.youtube.com/embed/TU_VIDEO_ID" 
-              title="YouTube video player" 
-              allowFullScreen
-            ></iframe>
-          </div>
 
           <h2 className="mb-4">Main Skills</h2>
-          <Card className="mb-4 shadow-sm bg-dark text-white">
+          <Card className="mb-4 shadow-sm">
             <Card.Body>
               <Card.Title><h3>Full stack developer</h3></Card.Title>
               <Card.Text>
@@ -47,19 +36,45 @@ function App() {
               </Card.Body>
             </Card>
 
-          <Card className="mb-4 shadow-sm text-black">
+            <Card className="mb-4 shadow-sm">
+            <Card.Body>
+              <Card.Title><h3>Data engineering</h3></Card.Title>
+              <Card.Text>
+                <p className=''>Worked with data in a professional environment:</p>
+                <ul className="list-unstyled">
+                  <li>- Months of real experience developing data preprocessing scripts in python for damaged or faulty CSV, JSON and SQL files.</li>
+                  <li>- Specialized in information systems in college, with subjects such as database administration and ETL systems with Microsoft PowerBI.</li>
+                  <li>- Personally passionate about developing tools to condense and visualize data.</li>
+                </ul>
+              </Card.Text>
+            </Card.Body>
+          </Card>
+
+          <Card className="mb-4 shadow-sm">
             <Card.Body>
               <Card.Title><h3>AI and algorithms</h3></Card.Title>
               <Card.Text>
-                <p className='text-black'>Worked on various projects involving AI and algorithms, including:</p>
-                <ul className="list-unstyled text-black">
+                <p className=''>Worked on various projects involving AI and algorithms, including:</p>
+                <ul className="list-unstyled">
                   <li>- Development of several algorithms (pathfinding on a tiled game, minmax for connect4) for my Artificial Intelligence class.</li>
-                  <li>- Training of a fake news detector using sklearn and nltk for my final grade project.</li>
+                  <li>- Trained a fake news detector using sklearn and nltk for my final grade project.</li>
                   <li>- Interested in prompt engineering (used LLMs for parts of my final grade project).</li>
                 </ul>
               </Card.Text>
             </Card.Body>
           </Card>
+
+          <h2 className="mb-4">Final Grade Project Showcase</h2>
+        <p> Coming soon!</p>
+
+          {/* Video */}
+          <div className="ratio ratio-16x9 mb-5 shadow">
+            <iframe 
+              src="https://www.youtube.com/embed/TU_VIDEO_ID" 
+              title="YouTube video player" 
+              allowFullScreen
+            ></iframe>
+          </div>
 
         </Col>
         <Col md={4} className="text-center">
@@ -154,7 +169,7 @@ function App() {
                     <i className="bi bi-linkedin me-2"></i> LinkedIn
                 </a>
                 <a 
-                    href={`${process.env.PUBLIC_URL}/documents/Alejandro_Perez.pdf`}
+                    href={`${process.env.PUBLIC_URL}/documents/CV-AlejandroPerezArguello.pdf`}
                     target="_blank"
                     rel="noopener noreferrer"
                     className="btn btn-outline-warning"
