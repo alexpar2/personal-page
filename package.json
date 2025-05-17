@@ -4,7 +4,7 @@
   "description": "Página de currículum en React con Express",
   "scripts": {
     "build": "react-scripts build",
-    "start": "node server.js"
+    "start": "react-scripts start"
   },
   "dependencies": {
     "bootstrap": "^5.3.6",
