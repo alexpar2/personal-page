@@ -50,14 +50,17 @@ function App() {
                   <li>- Interested in prompt engineering (used LLMs for parts of my final grade project).</li>
                 </ul>
               </Card.Text>
-              <video
-                src="/Belkan.mp4"
-                autoPlay
-                loop
-                muted
-                playsInline
-                className="w-80 mb-3 rounded"
-              />
+              <div className="mb-3 ratio ratio-16x9">
+                <video
+                  src="/Belkan.mp4"
+                  autoPlay
+                  loop
+                  muted
+                  playsInline
+                  className="w-100 h-100 object-fit-cover rounded"
+                />
+              </div>
+
             </Card.Body>
           </Card>
 
