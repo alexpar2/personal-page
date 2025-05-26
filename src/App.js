@@ -22,6 +22,9 @@ function App() {
         <Col md={8} className="text-center">
 
           <h2 className="mb-4">Main Skills</h2>
+
+         
+
           <Card className="mb-4 shadow-sm">
             <Card.Body>
               <Card.Title><h3>Full stack developer</h3></Card.Title>
@@ -35,6 +38,28 @@ function App() {
               </Card.Text>
               </Card.Body>
             </Card>
+
+             <Card className="mb-4 shadow-sm">
+            <Card.Body>
+              <Card.Title><h3>AI and algorithms</h3></Card.Title>
+              <Card.Text>
+                <p className=''>Worked on various projects involving AI and algorithms, including:</p>
+                <ul className="list-unstyled">
+                  <li>- Development of several algorithms (<a className="text-warning" href="https://github.com/alexpar2/Belkan">pathfinding on a tiled game</a>, minimax with alpha beta pruning for connect4) for my Artificial Intelligence class.</li>
+                  <li>- Trained a fake news detector using sklearn and nltk for my final grade project.</li>
+                  <li>- Interested in prompt engineering (used LLMs for parts of my final grade project).</li>
+                </ul>
+              </Card.Text>
+              <video
+                src="/Belkan.mp4"
+                autoPlay
+                loop
+                muted
+                playsInline
+                className="w-80 mb-3 rounded"
+              />
+            </Card.Body>
+          </Card>
 
             <Card className="mb-4 shadow-sm">
             <Card.Body>
@@ -50,19 +75,7 @@ function App() {
             </Card.Body>
           </Card>
 
-          <Card className="mb-4 shadow-sm">
-            <Card.Body>
-              <Card.Title><h3>AI and algorithms</h3></Card.Title>
-              <Card.Text>
-                <p className=''>Worked on various projects involving AI and algorithms, including:</p>
-                <ul className="list-unstyled">
-                  <li>- Development of several algorithms (pathfinding on a tiled game, minmax for connect4) for my Artificial Intelligence class.</li>
-                  <li>- Trained a fake news detector using sklearn and nltk for my final grade project.</li>
-                  <li>- Interested in prompt engineering (used LLMs for parts of my final grade project).</li>
-                </ul>
-              </Card.Text>
-            </Card.Body>
-          </Card>
+
 
           <h2 className="mb-4">Final Grade Project Showcase</h2>
         <p> Coming soon!</p>
