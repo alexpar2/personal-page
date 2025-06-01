@@ -1,4 +1,5 @@
 import React from 'react';
+import { Analytics } from "@vercel/analytics/react"
 //import 'bootstrap/dist/css/bootstrap.min.css';
 import { Container, Row, Col, Card, Image, Accordion } from 'react-bootstrap';
 
@@ -20,6 +21,19 @@ function App() {
             </Card.Body>
           </Card>
         <Col md={8} className="text-center">
+
+
+          <h2 className="mb-4">Final Grade Project Showcase</h2>
+
+
+          {/* Video */}
+          <div className="ratio ratio-16x9 mb-5 shadow">
+            <iframe 
+              src="https://www.youtube.com/embed/kF4tRzNlMfc" 
+              title="YouTube video player" 
+              allowFullScreen
+            ></iframe>
+          </div>
 
           <h2 className="mb-4">Main Skills</h2>
 
@@ -80,17 +94,7 @@ function App() {
 
 
 
-          <h2 className="mb-4">Final Grade Project Showcase</h2>
-        <p> Coming soon!</p>
-
-          {/* Video */}
-          <div className="ratio ratio-16x9 mb-5 shadow">
-            <iframe 
-              src="https://www.youtube.com/embed/TU_VIDEO_ID" 
-              title="YouTube video player" 
-              allowFullScreen
-            ></iframe>
-          </div>
+        
 
         </Col>
         <Col md={4} className="text-center">
