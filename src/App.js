@@ -7,7 +7,9 @@ const fotoUrl = process.env.PUBLIC_URL + '/yo.jpg';
 
 function App() {
   return (
+    
     <Container className="my-5">
+      <Analytics />
       <Row className="justify-content-center text-center">      
           {/* Nombre */}
           <h1 className="mb-3">Alejandro Pérez Argüello</h1>
@@ -227,6 +229,7 @@ function App() {
         </Col>
       </Row>
     </Container>
+    
   );
 }
 
