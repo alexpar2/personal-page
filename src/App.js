@@ -29,7 +29,7 @@ function App() {
           {/* Video */}
           <div className="ratio ratio-16x9 mb-5 shadow">
             <iframe 
-              src="https://www.youtube.com/embed/kF4tRzNlMfc" 
+              src="https://www.youtube.com/embed/wjrkNxGkhR4 " 
               title="YouTube video player" 
               allowFullScreen
             ></iframe>
