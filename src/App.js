@@ -1,5 +1,6 @@
 import React from 'react';
 import { Analytics } from "@vercel/analytics/react"
+import FuzzyText from './components/FuzzyText/FuzzyText.jsx';
 //import 'bootstrap/dist/css/bootstrap.min.css';
 import { Container, Row, Col, Card, Image, Accordion } from 'react-bootstrap';
 
@@ -12,8 +13,16 @@ function App() {
       <Analytics />
       <Row className="justify-content-center text-center">      
           {/* Nombre */}
-          <h1 className="mb-3">Alejandro Pérez Argüello</h1>
-          <h2 className="mb-3 text-secondary">Computer Engineer</h2>
+            <FuzzyText 
+              baseIntensity={0.2} 
+              hoverIntensity={0.5} 
+              enableHover={true}
+            >
+              Alejandro Pérez Argüello
+            </FuzzyText>
+
+             <h1>Computer Engineer</h1> 
+
           {/* Descripción */}
           <Card className="mb-4 shadow-sm">
             <Card.Body>
