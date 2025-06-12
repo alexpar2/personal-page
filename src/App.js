@@ -97,7 +97,7 @@ function App() {
                 <ul className="list-unstyled">
                   <li>- Months of real experience developing data preprocessing scripts in python for damaged or faulty CSV, JSON and SQL files.</li>
                   <li>- Specialized in information systems in college, with subjects such as database administration and ETL systems with Microsoft PowerBI.</li>
-                  <li>- Personally passionate about developing tools to condense and visualize data.</li>
+                  <li>- Personally passionate about developing tools to condense and visualize data. I recently created this <a className="text-warning" href="https://github.com/alexpar2/whatsapp-analyzer">WhatsApp Analyzer tool that condenses exported Whatsapp data into fun graphs.</a></li>
                 </ul>
               </Card.Text>
             </Card.Body>
