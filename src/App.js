@@ -21,13 +21,13 @@ function App() {
               Alejandro Pérez Argüello
             </FuzzyText>
 
-             <h1>Computer Engineer</h1> 
+             <h1>Data Scientist and Computer Engineer</h1> 
 
           {/* Descripción */}
           <Card className="mb-4 shadow-sm">
             <Card.Body>
               <Card.Text className="lead">
-                Hello! I'm Alex, a Computer Engineering graduate and flexible developer from Spain. This is my personal webpage where I showcase myself as a professional. Feel free to browse my github to see my projects!
+                Hello! I'm Alex, a passionate data scientist and computer engineer with a strong background in full-stack development, AI, and data engineering. I have experience working in the cybersecurity industry and a proven track record of developing innovative solutions to complex problems. I'm always eager to learn new technologies and take on challenging projects that allow me to grow both personally and professionally.
               </Card.Text>
             </Card.Body>
           </Card>
@@ -48,7 +48,19 @@ function App() {
 
           <h2 className="mb-4">Main Skills</h2>
 
-         
+          <Card className="mb-4 shadow-sm">
+            <Card.Body>
+              <Card.Title><h3>AI and Data Science</h3></Card.Title>
+              <Card.Text>
+                <p className=''>Master's degree in Data Science and Computer Engineering:</p>
+                <ul className="list-unstyled">
+                  <li>- Fluent in state of the art Data Analysis techniques and tools. Experience with a wide variety of datasets (image, text, genomic, time-series).</li>
+                  <li>- Advanced knowledge of natural language processing and machine learning applied to social media data.</li>
+                  <li>- Experience with deep learning frameworks such as TensorFlow and PyTorch.</li>
+                </ul>
+              </Card.Text>
+            </Card.Body>
+          </Card>
 
           <Card className="mb-4 shadow-sm">
             <Card.Body>
@@ -64,40 +76,17 @@ function App() {
               </Card.Body>
             </Card>
 
-             <Card className="mb-4 shadow-sm">
-            <Card.Body>
-              <Card.Title><h3>AI and algorithms</h3></Card.Title>
-              <Card.Text>
-                <p className=''>Worked on various projects involving AI and algorithms, including:</p>
-                <ul className="list-unstyled">
-                  <li>- Development of several algorithms (<a className="text-warning" href="https://github.com/alexpar2/Belkan">pathfinding on a tiled game</a>, minimax with alpha beta pruning for connect4) for my Artificial Intelligence class.</li>
-                  <li>- Trained a fake news detector using sklearn and nltk for my final grade project.</li>
-                  <li>- Interested in prompt engineering (used LLMs for parts of my final grade project).</li>
-                </ul>
-              </Card.Text>
-              <div className="mb-3 ratio ratio-16x9">
-                <video
-                  src="/Belkan.mp4"
-                  autoPlay
-                  loop
-                  muted
-                  playsInline
-                  className="w-100 h-100 object-fit-cover rounded"
-                />
-              </div>
 
-            </Card.Body>
-          </Card>
 
             <Card className="mb-4 shadow-sm">
             <Card.Body>
               <Card.Title><h3>Data engineering</h3></Card.Title>
               <Card.Text>
-                <p className=''>Worked with data in a professional environment:</p>
+                <p className=''>Experience in ETL and data pipeline development:</p>
                 <ul className="list-unstyled">
-                  <li>- Months of real experience developing data preprocessing scripts in python for damaged or faulty CSV, JSON and SQL files.</li>
-                  <li>- Specialized in information systems in college, with subjects such as database administration and ETL systems with Microsoft PowerBI.</li>
-                  <li>- Personally passionate about developing tools to condense and visualize data. I recently created a WhatsApp Analyzer tool that condenses exported Whatsapp data into fun graphs. Currently hard at work turning it into a phone app!</li>
+                  <li>- Real experience developing data preprocessing scripts in python for damaged or faulty CSV, JSON and SQL files.</li>
+                  <li>- Experience with data warehousing and business intelligence tools.</li>
+                  <li>- Personally passionate about data visualization.</li>
                 </ul>
               </Card.Text>
             </Card.Body>
@@ -118,25 +107,19 @@ function App() {
               <Accordion.Body>
                 <Accordion flush>
                   <Accordion.Item eventKey="0">
-                    <Accordion.Header><p className='text-black'>Programming Languages</p></Accordion.Header>
+                    <Accordion.Header><p className='text-black'>My Best Programming Languages</p></Accordion.Header>
                     <Accordion.Body>
                       <ul className="list-unstyled text-dark text-bold">
-                        <li>Bash scripts</li>
-                        <li>C</li>
+                        <li>Bash scripting</li>
                         <li>C++</li>
                         <li>Python</li>
-                        <li>Java</li>
-                        <li>Ruby</li>
-                        <li>JavaScript</li>
-                        <li>HTML</li>
-                        <li>CSS</li>
-                        <li>PHP</li>
+                        <li>R</li>
                       </ul>
                     </Accordion.Body>
                   </Accordion.Item>
                   
                   <Accordion.Item eventKey="1">
-                    <Accordion.Header><p className='text-black'>Databases</p></Accordion.Header>
+                    <Accordion.Header><p className='text-black'>Databases I've worked with</p></Accordion.Header>
                     <Accordion.Body>
                       <ul className="list-unstyled text-dark">
                         <li>SQL</li>
@@ -150,9 +133,14 @@ function App() {
                     <Accordion.Header><p className='text-black'>Frameworks & Libraries</p></Accordion.Header>
                     <Accordion.Body>
                       <ul className="list-unstyled text-dark">
+                        <li>scikit-learn</li>
+                        <li>XGBoost</li>
+                        <li>Pytorch</li>
+                        <li>Numpy</li>
+                        <li>Matplotlib</li>
+                        <li>Seaborn</li>
+                        <li>Plotly</li>
                         <li>React</li>
-                        <li>Vue</li>
-                        <li>Bootstrap</li>
                         <li>Flask</li>
                         <li>Jinja2</li>
                         <li>FastAPI</li>
@@ -168,9 +156,9 @@ function App() {
                     <Accordion.Body>
                       <ul className="list-unstyled text-dark">
                         <li>Git & GitHub</li>
-                        <li>JIRA</li>
                         <li>Docker</li>
-                        <li>Docker Desktop</li>
+                        <li>Linux</li>
+                        <li>Gephi</li>
                       </ul>
                     </Accordion.Body>
                   </Accordion.Item>
@@ -200,7 +188,7 @@ function App() {
                     <i className="bi bi-linkedin me-2"></i> LinkedIn
                 </a>
                 <a 
-                    href={`${process.env.PUBLIC_URL}/documents/CV-AlejandroPerezArguello.pdf`}
+                    href={`${process.env.PUBLIC_URL}/documents/Resume 2026.pdf`}
                     target="_blank"
                     rel="noopener noreferrer"
                     className="btn btn-outline-warning"
