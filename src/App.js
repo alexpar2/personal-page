@@ -29,7 +29,7 @@ function App() {
           </Card>
         <Col md={8} className="text-center">
 
-
+          <h2 className="mb-4">Projects</h2>
           <h2 className="mb-4">News Analyzer</h2>
 
 
@@ -48,7 +48,7 @@ function App() {
               <Card.Text>
                 <p className=''>I developed a tool that transforms a whatsapp chat export into an interactive visualization that tracks all types of statistics about the users and their conversations</p>
                 <p className=''>Currently working on turning it into a mobile app</p>
-                <Image src="documents/Screenshot_5.png" alt="Whatsapp Analyzer" className="img-fluid mb-3 shadow-sm" />
+                <Image src="Screenshot_5.png" alt="Whatsapp Analyzer" className="img-fluid mb-3 shadow-sm" />
               </Card.Text>
             </Card.Body>
           </Card>
