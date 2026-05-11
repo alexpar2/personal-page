@@ -13,13 +13,9 @@ function App() {
       <Analytics />
       <Row className="justify-content-center text-center">      
           {/* Nombre */}
-            <FuzzyText 
-              baseIntensity={0.2} 
-              hoverIntensity={0.5} 
-              enableHover={true}
-            >
+            <h1            >
               Alejandro Pérez Argüello
-            </FuzzyText>
+            </h1>
 
              <h1>Data Scientist and Computer Engineer</h1> 
 
