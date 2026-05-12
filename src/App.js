@@ -142,20 +142,17 @@ function App() {
                     <Accordion.Header><p className='text-black'>Frameworks & Libraries</p></Accordion.Header>
                     <Accordion.Body>
                       <ul className="list-unstyled text-dark">
+                        <li>Agentic Programming</li>
                         <li>scikit-learn</li>
                         <li>XGBoost</li>
                         <li>Pytorch</li>
                         <li>Numpy</li>
                         <li>Matplotlib</li>
-                        <li>Seaborn</li>
-                        <li>Plotly</li>
                         <li>React</li>
                         <li>Flask</li>
-                        <li>Jinja2</li>
                         <li>FastAPI</li>
                         <li>Pandas</li>
                         <li>Node.js</li>
-                        <li>Uvicorn</li>
                       </ul>
                     </Accordion.Body>
                   </Accordion.Item>
