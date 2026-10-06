@@ -1,11 +1,12 @@
 import React, { useState } from 'react';
+import Icon from './Icon.jsx';
 
 // Shows a thumbnail and only loads the (privacy-enhanced) YouTube player after a click
 function YouTubeEmbed({ id, title }) {
   const [playing, setPlaying] = useState(false);
 
   return (
-    <div className="ratio ratio-16x9 mb-3 shadow-sm">
+    <div className="media media-video">
       {playing ? (
         <iframe
           src={`https://www.youtube-nocookie.com/embed/${id}?autoplay=1`}
@@ -17,7 +18,9 @@ function YouTubeEmbed({ id, title }) {
       ) : (
         <button type="button" className="yt-facade" onClick={() => setPlaying(true)} aria-label={`Play video: ${title}`}>
           <img src={`https://i.ytimg.com/vi/${id}/hqdefault.jpg`} alt="" loading="lazy" width="480" height="360" />
-          <i className="bi bi-play-btn-fill" aria-hidden="true" />
+          <span className="yt-play">
+            <Icon name="play" size={28} />
+          </span>
         </button>
       )}
     </div>

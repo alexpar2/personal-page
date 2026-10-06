@@ -1,6 +1,7 @@
 export const profile = {
   name: 'Alejandro Pérez Argüello',
   role: 'Data Scientist and Computer Engineer',
+  location: 'Granada, Spain',
   intro:
     "Hello! I'm Alex, a passionate data scientist and computer engineer with a strong background in full-stack development, AI, and data engineering. I have experience working in the cybersecurity industry and a proven track record of developing innovative solutions to complex problems. I'm always eager to learn new technologies and take on challenging projects that allow me to grow both personally and professionally.",
 };
@@ -11,6 +12,7 @@ export const projects = [
     subtitle: "Bachelor's Final Thesis · Jun. 2025",
     description:
       'Dockerized web application that extracts data from Reddit (PRAW) and the Google News API and performs topic, sentiment and disinformation analysis using a naive Bayes classifier and zero-shot LLMs (GPT-4 API).',
+    tags: ['Python', 'Docker', 'PRAW', 'Google News API', 'Naive Bayes', 'GPT-4'],
     youtubeId: 'wjrkNxGkhR4',
   },
   {
@@ -18,6 +20,7 @@ export const projects = [
     subtitle: 'Personal project · Jul. 2025',
     description:
       'A tool that transforms a WhatsApp chat export into an interactive visualization that tracks all types of statistics about the users and their conversations. Built with Python (Pandas/NLTK), it generates interactive HTML reports. Currently working on turning it into a mobile app.',
+    tags: ['Python', 'Pandas', 'NLTK', 'Data visualization'],
     image: {
       src: '/whatsapp-analyzer.webp',
       alt: 'WhatsApp Analyzer report showing message statistics and charts per chat participant',
@@ -59,6 +62,7 @@ export const education = [
 export const skills = [
   {
     title: 'AI and Data Science',
+    icon: 'cpu',
     lead: "Master's degree in Data Science and Computer Engineering:",
     points: [
       'Fluent in state of the art data analysis techniques and tools. Experience with a wide variety of datasets (image, text, genomic, time series).',
@@ -68,6 +72,7 @@ export const skills = [
   },
   {
     title: 'Full-stack development',
+    icon: 'graph',
     lead: 'Worked on several web applications at personal, academic and professional level, including:',
     points: [
       'Full-stack development for Constella Intelligence (a cybersecurity firm that manages the biggest data lake of compromised assets in the world) using Vue and Apache Airflow.',
@@ -77,6 +82,7 @@ export const skills = [
   },
   {
     title: 'Data engineering',
+    icon: 'database',
     lead: 'Experience in ETL and data pipeline development:',
     points: [
       'Real experience developing Python preprocessing scripts for damaged or faulty CSV, JSON and SQL files.',
@@ -96,14 +102,28 @@ export const techStack = [
   { title: 'Others', items: ['Git & GitHub', 'Docker', 'Linux', 'Gephi'] },
 ];
 
-export const languages = ['Spanish: native', 'English: Cambridge C1', 'French: DELF B1', 'Japanese: basic'];
+// level: number of CEFR steps reached (A1 = 1 … C2 = 6)
+export const languages = [
+  { name: 'Spanish', label: 'Native', level: 6 },
+  { name: 'English', label: 'C1 · Cambridge', level: 5 },
+  { name: 'French', label: 'B1 · DELF', level: 3 },
+  { name: 'Japanese', label: 'Basic', level: 1 },
+];
+
+export const facts = [
+  { label: 'Based in', value: 'Granada, Spain' },
+  { label: 'Studying', value: 'MSc Data Science, UGR (2026)' },
+  { label: 'Researching', value: 'Credibility analysis on Reddit' },
+  { label: 'Previously', value: 'Constella Intelligence' },
+];
+
+export const email = 'alex.prza@gmail.com';
+export const cvUrl = '/documents/Resume_2026.pdf';
 
 export const links = [
-  { label: 'GitHub', href: 'https://github.com/alexpar2/', icon: 'github', variant: 'outline-light', external: true },
-  { label: 'LinkedIn', href: 'https://www.linkedin.com/in/alejandro-perez-arguello-1a614b9b/', icon: 'linkedin', variant: 'outline-light', external: true },
-  { label: 'View CV (PDF)', href: '/documents/Resume_2026.pdf', icon: 'file-earmark-pdf', variant: 'outline-warning', external: true },
-  { label: 'Email', href: 'mailto:alex.prza@gmail.com', icon: 'envelope', variant: 'outline-danger' },
-  { label: 'Telegram', href: 'https://t.me/frycat', icon: 'telegram', variant: 'outline-info', external: true },
+  { label: 'GitHub', href: 'https://github.com/alexpar2/', icon: 'github' },
+  { label: 'LinkedIn', href: 'https://www.linkedin.com/in/alejandro-perez-arguello-1a614b9b/', icon: 'linkedin' },
+  { label: 'Telegram', href: 'https://t.me/frycat', icon: 'telegram' },
 ];
 
 export const sourceUrl = 'https://github.com/alexpar2/personal-page';

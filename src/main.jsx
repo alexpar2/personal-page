@@ -1,7 +1,8 @@
 import React from 'react';
 import { createRoot } from 'react-dom/client';
-import 'bootswatch/dist/lux/bootstrap.min.css';
-import 'bootstrap-icons/font/bootstrap-icons.min.css';
+import '@fontsource-variable/bricolage-grotesque';
+import '@fontsource-variable/inter';
+import '@fontsource-variable/jetbrains-mono';
 import './styles.css';
 import App from './App.jsx';
 
